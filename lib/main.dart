@@ -16,6 +16,7 @@ void main() {
         () => runApp(const MyApp()),
     blocObserver: TodoBlocObserver(),
   );
+  // () => runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
         create: (context) => TodoCubit(TodoRepositoryImpl()),
         child: const TodoNameView(),
       ),
+      // home: CounterUiBloc(),
     );
   }
 }
