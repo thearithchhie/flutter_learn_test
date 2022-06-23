@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learn_test/bloc/search/ui/article_list_item.dart';
 import 'package:flutter_learn_test/stream/stream_subscription.dart';
 import 'package:flutter_learn_test/stream/stream_test.dart';
 import 'package:flutter_learn_test/stream/strem-sum.dart';
-import 'lab6/main_lab6.dart';
 
 
 void main() {
@@ -15,12 +15,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primarySwatch: Colors.pink,
-        ),
-        // home: StreamTest(),
-        home: StreamSum(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.pink,
+      ),
+      home: ArticleListItem(),
     );
   }
 }
