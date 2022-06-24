@@ -59,8 +59,8 @@ class HomeView extends GetView<HomeController> {
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
-                          Text("extention one").addBox(),
-                          Container(child: Text("Add Paddding")),
+                          const Text("extention one").addBox(),
+                          const Text("Add Paddding"),
                           Padding(
                             padding: const EdgeInsets.all(4),
                             child: const Text("extention").addBox(),
@@ -73,6 +73,9 @@ class HomeView extends GetView<HomeController> {
               }),
           onLoading: const Center(
               child: CircularProgressIndicator(backgroundColor: Colors.pink)),
+              onEmpty: const Center(
+                child: Text("No Data"),
+              ),
           onError: (error) {
         if (kDebugMode) {
           print("error $error");
@@ -99,7 +102,6 @@ extension on Text {
 }
 
 extension on Widget {
-  //
   Container addBox() {
     return Container(
       padding: const EdgeInsets.all(16),

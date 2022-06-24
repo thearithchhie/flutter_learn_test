@@ -12,7 +12,8 @@ class HomeController extends GetxController with StateMixin<UserModel> {
     _userProvider.getUser().then((UserModel response) {
       change(response, status: RxStatus.success());
     }, onError: (err) {
-      if (kDebugMode) {  // kDebugMode = always return true
+      if (kDebugMode) {
+        // kDebugMode = always return true
         print("HomeController $err");
       }
       change(
