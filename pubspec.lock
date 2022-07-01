@@ -511,6 +511,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.1"
+  vertical_tab_bar_view:
+    dependency: "direct main"
+    description:
+      name: vertical_tab_bar_view
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.1"
   win32:
     dependency: transitive
     description:
