@@ -11,7 +11,7 @@ class Lab9Body extends StatefulWidget {
 class _Lab9BodyState extends State<Lab9Body> {
   String firstImage = 'assets/images/acer.jpeg';
   Color colorOne = Colors.lightBlue;
-  Color colorTwo = Colors.blueGrey;
+  Color c2 = Colors.blueGrey;
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -41,20 +41,20 @@ class _Lab9BodyState extends State<Lab9Body> {
                       setState(() {
                         firstImage = 'assets/images/acer.jpeg';
                         colorOne = Colors.lightBlue;
-                        colorTwo = Colors.blueGrey;
+                        c2 = Colors.blueGrey;
                       });
                     },
                   ),
                   SizedBox(width: size.width * 0.034),
                   CupertinoButton(
                     borderRadius: const BorderRadius.all(Radius.circular(20)),
-                    color: colorTwo,
+                    color: c2,
                     child: const Text('Mac'),
                     onPressed: () {
                       setState(() {
                         firstImage = 'assets/images/mac.jpeg';
                         colorOne = Colors.blueGrey;
-                        colorTwo = Colors.lightBlue;
+                        c2 = Colors.lightBlue;
                       });
                     },
                   ),
@@ -73,7 +73,7 @@ class _Lab9BodyState extends State<Lab9Body> {
                   setState(() {
                     firstImage = "assets/images/acer.jpeg";
                     colorOne = Colors.lightBlue;
-                    colorTwo = Colors.blueGrey;
+                    c2 = Colors.blueGrey;
                   });
                 },
               ),
